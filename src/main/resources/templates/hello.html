@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<h1>Welcome to the following students</h1>
+	
+	<ul th:each="student : ${Students}">
+		<li th:text="${student.name}">1</li>
+	</ul>
+	<h1>Add new students to list</h1>
+	<form action="#" th:action="@{/hello}" th:object="${student}" method="post">
+		<p>Id: <input type="text"th:field="*{name}"/></p>
+		<p><input type="submit" value="Submit"/></p>
+	</form>
+	</body>
+</html>

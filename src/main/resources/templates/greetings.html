@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1 th:if="${Age} &gt17" th:text="'Hello ' + ${Name} + ', welcome back!'"></h1>
+		<h1 th:if="${Age} &lt18" th:text="'Access denied ' + ${Name} + ', you\'re too young!'"></h1>		
+	</body>
+</html>
